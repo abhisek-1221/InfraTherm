@@ -1,0 +1,24 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# MacOS files
+.DS_Store
+
+# Coverage reports
+htmlcov/
+.coverage
