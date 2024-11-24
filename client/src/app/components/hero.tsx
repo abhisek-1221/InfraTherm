@@ -1,5 +1,6 @@
 'use client'
 
+import { Cover } from '@/components/ui/cover'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
@@ -12,7 +13,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        AI-Powered SaaS Solution
+        AI-Driven Thermal Imaging Insights with <Cover>InfraTherm</Cover> 
       </motion.h1>
       <motion.p 
         className="text-xl mb-8 text-gray-600"
@@ -20,7 +21,8 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Revolutionize your workflow with cutting-edge AI technology
+        for Smarter Infrastructure 
+
       </motion.p>
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
