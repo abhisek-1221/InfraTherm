@@ -12,7 +12,7 @@ import { ModeToggle } from './mode-toggle'
 const faqs = [
     {
       question: "What machine learning model is used in this application?",
-      answer: "The application uses the EfficientNet architecture, a state-of-the-art Convolutional Neural Network (CNN) known for its efficiency and accuracy, to detect pavement cracks from thermal infrared images."
+      answer: "The application uses the EfficientNet architecture, and Grad-CAM Visualizer, to detect pavement cracks from thermal infrared images."
     },
     {
       question: "How was the model trained and fine-tuned?",
@@ -59,13 +59,19 @@ export default function FAQ() {
           >
             <AccordionItem value={`item-${index}`}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
+              <AccordionContent className='text-muted-foreground'>{faq.answer}</AccordionContent>
             </AccordionItem>
           </motion.div>
         ))}
       </Accordion>
-      <div className='p-4 flex items-center justify-center mt-10'>
+      <div className='p-4 flex items-start justify-between mt-10'>
+        <div>
+            2024 © InfraTherm. All rights reserved.
+        </div>
+        <div>
         <ModeToggle />
+        </div>
+        
       </div>
     </section>
   )
