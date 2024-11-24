@@ -28,7 +28,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <Image
-          src="/hero-image.png"
+          src="https://miro.medium.com/v2/resize:fit:1400/1*zq1lp5Bg8sdflG_ngrezzg.png"
           alt="AI SaaS Hero Image"
           width={800}
           height={400}

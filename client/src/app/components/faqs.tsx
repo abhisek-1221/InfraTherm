@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { ModeToggle } from './mode-toggle'
 
 const faqs = [
   {
@@ -53,6 +54,9 @@ export default function FAQ() {
           </motion.div>
         ))}
       </Accordion>
+      <div className='p-4 flex items-center justify-center mt-10'>
+        <ModeToggle />
+      </div>
     </section>
   )
 }
