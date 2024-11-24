@@ -1,0 +1,31 @@
+# Root-level ignores
+node_modules/               # Frontend dependencies
+venv/                       # Python virtual environment
+.env                        # Environment variables for both frontend and backend
+.env.local                  # Local environment variables
+.DS_Store                   # macOS-specific files
+.idea/                      # IDE configuration files (JetBrains)
+.vscode/                    # VSCode-specific files
+*.log                       # Log files
+
+# Client (Next.js frontend) ignores
+/client/.next/              # Next.js build output
+/client/out/                # Static export output
+/client/.env.local          # Frontend environment variables
+/client/node_modules/       # Node.js dependencies
+/client/package-lock.json   # Optional if you don't want to track lock files
+/client/yarn.lock           # Optional if using Yarn
+
+# Server (FastAPI backend) ignores
+/server/venv/               # Python virtual environment
+/server/__pycache__/        # Compiled Python files
+/server/*.pyc               # Bytecode files
+/server/.env                # Backend environment variables
+/server/htmlcov/            # Coverage reports
+/server/.mypy_cache/        # MyPy type checker cache
+/server/.pytest_cache/      # Pytest cache
+
+# Coverage and testing
+.coverage                   # Coverage reports
+coverage.xml
+*.coverage
