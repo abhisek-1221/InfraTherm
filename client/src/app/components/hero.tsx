@@ -26,6 +26,7 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
+        className='flex items-center justify-center'
       >
         <Image
           src="https://miro.medium.com/v2/resize:fit:1400/1*zq1lp5Bg8sdflG_ngrezzg.png"
