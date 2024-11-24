@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi-gradcam-test
+    command: >
+      sh -c "
+      pytest --disable-warnings && 
+      echo 'Tests passed successfully.'"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1

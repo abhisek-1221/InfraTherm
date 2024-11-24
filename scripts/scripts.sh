@@ -1,3 +1,4 @@
+#!/bin/bash
 
 set -e
 
@@ -25,6 +26,16 @@ logs() {
   docker logs fastapi-gradcam-container
 }
 
+test() {
+  echo "Running unit tests..."
+  pytest --disable-warnings
+}
+
+test_coverage() {
+  echo "Running unit tests with coverage..."
+  pytest --cov=app tests/
+}
+
 rebuild() {
   echo "Rebuilding the Docker image and container..."
   stop
@@ -35,12 +46,14 @@ rebuild() {
 help() {
   echo "Usage: ./scripts.sh [command]"
   echo "Commands:"
-  echo "  build     Build the Docker image"
-  echo "  run       Run the Docker container"
-  echo "  stop      Stop the running Docker container"
-  echo "  logs      Show logs of the running Docker container"
-  echo "  rebuild   Rebuild the Docker image and restart the container"
-  echo "  help      Show this help message"
+  echo "  build           Build the Docker image"
+  echo "  run             Run the Docker container"
+  echo "  stop            Stop the running Docker container"
+  echo "  logs            Show logs of the running Docker container"
+  echo "  test            Run unit tests"
+  echo "  test_coverage   Run unit tests with coverage report"
+  echo "  rebuild         Rebuild the Docker image and restart the container"
+  echo "  help            Show this help message"
 }
 
 case "$1" in
@@ -48,6 +61,8 @@ case "$1" in
   run) run ;;
   stop) stop ;;
   logs) logs ;;
+  test) test ;;
+  test_coverage) test_coverage ;;
   rebuild) rebuild ;;
   help | *) help ;;
 esac
