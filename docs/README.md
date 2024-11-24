@@ -1,0 +1,1 @@
+# InfraTherm App Architecture

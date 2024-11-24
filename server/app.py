@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"], 
 )
 
-model = load_model('../models/gradcam.h5')
+model = load_model('./models/gradcam.h5')
 last_conv_layer_name = "top_conv"
 class_names = ["High Crack", "Low Crack", "Medium Crack", "No Crack"]
 
