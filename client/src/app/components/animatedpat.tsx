@@ -1,14 +1,13 @@
-import Image from "next/image";
-import Hero from "./components/hero";
-import Features from "./components/features";
-import FAQ from "./components/faqs";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 
-export default function Home() {
+export function AnimatedGridPatternDemo() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-       <AnimatedGridPattern
+    <div className="relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-lg border bg-background p-20 md:shadow-xl">
+      <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white">
+        Animated Grid Pattern
+      </p>
+      <AnimatedGridPattern
         numSquares={30}
         maxOpacity={0.1}
         duration={3}
@@ -18,9 +17,6 @@ export default function Home() {
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
         )}
       />
-    <Hero />
-    <Features />
-    <FAQ />
-  </main>
+    </div>
   );
 }

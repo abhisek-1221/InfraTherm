@@ -3,6 +3,7 @@
 import { Cover } from '@/components/ui/cover'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { AnimatedGridPatternDemo } from './animatedpat'
 
 export default function Hero() {
   return (
