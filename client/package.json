@@ -12,6 +12,7 @@
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
+    "@tabler/icons-react": "^3.22.0",
     "@tsparticles/engine": "^3.6.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.6.0",
