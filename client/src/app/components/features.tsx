@@ -2,25 +2,26 @@
 
 import { motion } from 'framer-motion'
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Brain, Zap, BarChart } from 'lucide-react'
+import { Brain, MonitorCogIcon, BarChart } from 'lucide-react'
 
 const features = [
-  {
-    icon: Brain,
-    title: "AI-Powered Insights",
-    description: "Gain deep insights from your data with our advanced AI algorithms."
-  },
-  {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Experience blazing fast performance with our optimized infrastructure."
-  },
-  {
-    icon: BarChart,
-    title: "Detailed Analytics",
-    description: "Track and analyze your progress with comprehensive analytics tools."
-  }
-]
+    {
+      icon: Brain, 
+      title: "Automated Crack Detection",
+      description: "Upload thermal IR imagery to automatically identify and classify pavement cracks, enhancing maintenance efficiency"
+    },
+    {
+      icon: MonitorCogIcon, 
+      title: "EfficientNet Architecture",
+      description: "Utilize the state-of-the-art EfficientNet model to achieve high accuracy in crack detection while maintaining optimal computational performance"
+    },
+    {
+      icon: BarChart,
+      title: "Comprehensive Evaluation",
+    description: "Monitor performance metrics and classify detected cracks based on severity and use them for comparative analysis"
+    }
+  ]
+  
 
 export default function Features() {
   return (
