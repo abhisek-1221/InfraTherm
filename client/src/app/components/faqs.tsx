@@ -20,7 +20,7 @@ const faqs = [
     },
     {
       question: "What performance metrics are used to evaluate the model?",
-      answer: "The model’s performance is evaluated using metrics such as accuracy, precision, recall, and F1-score. The model achieved and accuracy of 98.97% and 85.7% on training amd validation sets, respectively."
+      answer: "The model’s performance is evaluated using metrics such as accuracy, precision, recall, and F1-score. The model achieved and accuracy of 98.87% and 85.47% on training amd validation sets, respectively."
     },
     {
       question: "What frameworks and technologies are used to build this application?",
